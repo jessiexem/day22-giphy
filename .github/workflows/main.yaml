@@ -1,7 +1,7 @@
 name: Compile, test, deploy
 on: ["push"]
 env:
-  GIPHY_API_KEY: ${{ secrets.giphy_api_key }}
+  GIF_API_KEY: ${{ secrets.giphy_api_key }}
 jobs:
   step1:
     runs-on: ubuntu-latest
