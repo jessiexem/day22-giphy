@@ -18,11 +18,10 @@ public class GiphyService {
     @Value("${GIF_API_KEY}")
     private String apiKey;
 
-//    private String apiKey="DSHXA83zCEvrRONk5ACHVQv2CUnoKSSb";
 
     private static final String GIPHY_URL= "https://api.giphy.com/v1/gifs/search";
 
-    //https://api.giphy.com/v1/gifs/search?api_key=DSHXA83zCEvrRONk5ACHVQv2CUnoKSSb&q=pokemon&limit=25&offset=0&rating=g&lang=en
+    //https://api.giphy.com/v1/gifs/search?api_key=apikey&q=pokemon&limit=25&offset=0&rating=g&lang=en
 
     public Optional<List<Giphy>> getGiphys(String q) {
         return getGiphys(q,"10","pg");
