@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giphy Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container w-40 p-3 row justify-content-start">
+        <h1>Search Your Favourite Gifs</h1>
+        <form action="/search" method="post">
+            <div class="mb-3">
+                <label for="phrase" class="form-label">Phrase: </label>
+                <input type="text" id="phrase" name="phrase" class="form-control">
+            </div>
+            <label for="limit">Results: </label>
+            <select id="limit" name="limit" class="form-select" aria-label="Default select example">
+                <option value="5">5</option>
+                <option value="10" selected>10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+            </select>
+            <br>
+            <label for="rating">Rating: </label>
+            <select id="rating" name="rating" class="form-select" aria-label="Default select example">
+                <option value="g">g</option>
+                <option value="pg" selected>pg</option>
+                <option value="pg-13">pg-13</option>
+                <option value="r">r</option>
+            </select>
+            <br>
+            <button type="submit" class="btn btn-outline-primary">Search</button>
+        </form>
+    </div>
+</body>
+</html>
