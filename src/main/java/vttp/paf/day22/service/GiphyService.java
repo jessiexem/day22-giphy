@@ -18,7 +18,6 @@ public class GiphyService {
     @Value("${GIF_API_KEY}")
     private String apiKey;
 
-
     private static final String GIPHY_URL= "https://api.giphy.com/v1/gifs/search";
 
     //https://api.giphy.com/v1/gifs/search?api_key=apikey&q=pokemon&limit=25&offset=0&rating=g&lang=en
